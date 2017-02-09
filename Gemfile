@@ -29,6 +29,9 @@ gem 'bootstrap-sass', '~> 3.3.7'
 # adding a simple form
 gem 'simple_form'
 
+#gem for compressing
+gem 'factory_girl_rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,6 +43,7 @@ gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'shoulda-matchers', '~> 3.1'
   gem 'byebug'
 end
 
