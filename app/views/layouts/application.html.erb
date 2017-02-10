@@ -7,9 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!-- wrap -->
+  <div id = "wrap">
+    <%= render 'shared/nav' %>
+    <div class = "container">
+      <div class = "row">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+<!-- end of wrap -->
 
-
-<%= yield %>
+  <div class="footer text-center">
+    <%= render 'shared/footer' %>
+  </div>
 
 </body>
 </html>
